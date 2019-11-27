@@ -1,0 +1,10 @@
+<h1>All Shelters</h1>
+<%= link_to 'New Shelter', '/shelters/new' %>
+<% @shelters.each do |shelter| %>
+<h2><%= link_to  shelter.name, "/shelters/#{shelter.id}" %></h2>
+<p> <%= shelter.addres %> </p>
+<p> <%= shelter.city %> </p>
+<p> <%= shelter.state %> </p>
+<p> <%= shelter.zip %> </p>
+<br>
+<% end %>

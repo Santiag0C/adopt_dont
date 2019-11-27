@@ -1,0 +1,10 @@
+<%= link_to 'Index', "/shelters" %>
+<h2><%= @shelter.name %></h2>
+<p> <%= @shelter.addres %> </p>
+<p> <%= @shelter.city %> </p>
+<p> <%= @shelter.state %> </p>
+<p> <%= @shelter.zip %> </p>
+<%= link_to 'Edit', "/shelters/#{@shelter.id}/edit" %>
+<br>
+<br>
+<%= button_to 'Delete', "/shelters/#{@shelter.id}", method: :delete %>
